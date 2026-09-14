@@ -1,0 +1,24 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	4782058032 [label="
+ ()" fillcolor=darkolivegreen1]
+	4798498752 [label=BinaryCrossEntropyBackward0]
+	4798498608 -> 4798498752
+	4798498608 [label=SigmoidBackward0]
+	4798498464 -> 4798498608
+	4798498464 [label=AddBackward0]
+	4798498416 -> 4798498464
+	4798498416 [label=MulBackward0]
+	4798498272 -> 4798498416
+	4781940224 [label="
+ (1)" fillcolor=lightblue]
+	4781940224 -> 4798498272
+	4798498272 [label=AccumulateGrad]
+	4798498704 -> 4798498464
+	4391135952 [label="
+ (1)" fillcolor=lightblue]
+	4391135952 -> 4798498704
+	4798498704 [label=AccumulateGrad]
+	4798498752 -> 4782058032
+}
